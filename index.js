@@ -1,5 +1,5 @@
 const express = require('express'); 
-const path = require("path");
+///I change path 
 const app = express(); 
 const PORT = 4000;    
 const userRoute = require("./routes/users.route.js");
@@ -9,7 +9,6 @@ app.use(express.urlencoded({ extended: true }));
 
 // Use the user routes
 app.use(userRoute);
-``
 // 404 error handler
 app.use((req, res, next) => {
     res.status(404).json({

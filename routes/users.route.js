@@ -1,6 +1,6 @@
 const express = require('express');
-const { getUsers, saveUser } = require('../controllers/users.controller');
 const router = express.Router();
+const { getUsers, saveUser } = require('../controllers/users.controller');
 
 // POST route for saving a user
 router.post("/users", saveUser);  
