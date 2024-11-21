@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Form</h1>
+    <form action="/users" method="POST">
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <input type="number" name="age" placeholder="Enter Age" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Users List</h2>
+    <ul id="user-list">
+        <!-- User list will be populated here -->
+        <!-- For now, this can be rendered server-side or via JS -->
+    </ul>
+
+    <script>
+        // You can add JS to dynamically display the users here
+        // You might want to make an AJAX call to /users to fetch the user list and render it on the page.
+    </script>
+</body>
+</html>
